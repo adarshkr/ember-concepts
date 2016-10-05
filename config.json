@@ -1,0 +1,29 @@
+{
+"baseurl" : "http://ember-concepts.herokuapp.com/",
+"languageCode" : "en-us",
+"title" : "Ember Concepts",
+"theme" : "hugo-material-docs",
+"canonifyurls" : true,
+"metadataformat" : "yaml",
+"uglyurls" : true,
+"params" : {
+  "version" : "1.0.0",
+  "logo" : "images/emberjs.png",
+  "favicon" : "",
+  "permalink" : "#",
+  "custom_css" : ["css/ember-concepts.css"],
+	"custom_js" : ["scripts/ember-concepts.js"],
+  "highlight_css": "",
+  "palette" : {
+    "primary" : "",
+    "accent" : " "
+  }
+},
+"menu" : {
+  "main" : [{
+    "name"   : "Home",
+  	"url"    : "/",
+  	"weight" : 0
+    }]
+}
+}
