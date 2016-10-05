@@ -2,3 +2,8 @@ baseurl = "http://ember-concepts.herokuapp.com/"
 languageCode = "en-us"
 title = "Ember Concepts"
 theme = "hugo-material-docs"
+
+
+[params]
+
+custom_css = ["css/ember-concepts.css"]
