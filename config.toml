@@ -2,8 +2,24 @@ baseurl = "http://ember-concepts.herokuapp.com/"
 languageCode = "en-us"
 title = "Ember Concepts"
 theme = "hugo-material-docs"
-
+metadataformat = "yaml"
+canonifyurls = true
 
 [params]
 
-custom_css = ["css/ember-concepts.css"]
+	version = "1.0.0"
+	logo = "images/emberjs.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = ["css/ember-concepts.css"]
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = ""
+    	accent  = ""
