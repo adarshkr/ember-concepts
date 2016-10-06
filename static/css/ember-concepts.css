@@ -1,3 +1,6 @@
 .copyright {
 	display: none
 }
+.article code {
+	background-color: transparent;
+}
