@@ -1,7 +1,7 @@
 {
 "baseurl" : "http://ember-concepts.herokuapp.com/",
 "languageCode" : "en-us",
-"title" : "Ember Concepts",
+"title" : "Ember Concepts 1.0.0",
 "theme" : "hugo-material-docs",
 "canonifyurls" : true,
 "metadataformat" : "yaml",
