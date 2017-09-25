@@ -7,10 +7,6 @@
   "archetypeDir" : "themes/guessme/archetypes",
   "paginate" :  10,
   "footnotereturnlinkcontents" : "↩",
-
-  "taxonomies" : {
-    "category" : "categories"
-  },
   "MetaDataFormat" : "toml",
   "rootlink": "/",
   "params" : {
