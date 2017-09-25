@@ -1,7 +1,7 @@
 +++
     title = "Getting Started"
     date = 2017-09-23T17:56:59+05:30
-    draft = true
+    draft = false
     Description = "Thank you for choosing guessme"
     Tags = ["Guessme"]
     Categories = ["Guessme"]
