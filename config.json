@@ -16,7 +16,8 @@
   "params" : {
     "locale": "en-us",
     "logoPath": "images/Ember.js_Logo_and_Mascot.png"
-  }
+  },
+  "paginatePath": "page"
 }
 
   
