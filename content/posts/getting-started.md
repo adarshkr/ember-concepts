@@ -3,8 +3,8 @@
     date = 2017-09-23T17:56:59+05:30
     draft = false
     Description = "Thank you for choosing guessme"
-    Tags = ["Guessme"]
-    Categories = ["Guessme"]
+    Tags = ["Ember"]
+    Categories = ["Ember"]
 +++
 
 - HTML, CSS, JavaScript - the building blocks of web pages. You can find documentation of each of these technologies at the
