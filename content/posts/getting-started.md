@@ -1,9 +1,11 @@
----
-date:
-title: Things you need to know before starting Ember.JS
-type: index
-weight: 0
----
++++
+    title = "Getting Started"
+    date = 2017-09-23T17:56:59+05:30
+    draft = true
+    Description = "Thank you for choosing guessme"
+    Tags = ["Guessme"]
+    Categories = ["Guessme"]
++++
 
 - HTML, CSS, JavaScript - the building blocks of web pages. You can find documentation of each of these technologies at the
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web "_blank")

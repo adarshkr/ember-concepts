@@ -1,0 +1,13 @@
+.page-container .logo {
+    margin: 10px auto;
+    width: 70%;
+}
+.page-container .logo img{ 
+    width: 50px;
+    float: left;
+    margin-left: 10px;
+}
+.page-container .logo h2{ 
+    float: left;
+    margin-left: 10px
+}

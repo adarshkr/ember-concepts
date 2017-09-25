@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  
+  {{ range (.Paginate (where .Data.Pages "Type" "posts")).Pages }}
+    {{ partial "page-summary.html" . }}
+  {{ end }}
+
+{{ partial "footer.html" . }}
