@@ -11,7 +11,7 @@ Ember CLI ships with support for managing your application's environment. Ember 
 
 The ENV object contains three important keys:
 
-   - <code>EmberENV</code> can be used to define Ember feature flags (see the Feature Flags guide).
+   - <code>EmberENV</code> can be used to define Ember feature flags [(see the Feature Flags guide)](https://guides.emberjs.com/v2.15.0/configuring-ember/feature-flags/).
 
    - <code>APP</code> can be used to pass flags/options to your application instance.
 
