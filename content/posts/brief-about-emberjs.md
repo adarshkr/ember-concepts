@@ -1,8 +1,8 @@
 +++
-    title = "Brief About Emberjs"
+    title = "Brief About Ember.js"
     date = 2017-09-22T17:56:59+04:30
     draft = false
-    Description = "Brief About Emberjs"
+    Description = "Brief About Ember.js"
     Tags = ["ember"]
     Categories = ["ember"]
 +++
