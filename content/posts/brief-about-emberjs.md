@@ -23,4 +23,6 @@ Some of these features that you'll learn about in the guides are:
 
   - <code>Ember Inspector</code> - A browser extension, or bookmarklet, to inspect your application live.
 
-  Reference Links:- https://guides.emberjs.com
+  References:- 
+  
+  https://guides.emberjs.com
