@@ -19,4 +19,4 @@
 
 ## Core Concepts
 
--  There are a few core concepts you should understand how [Ember application works](https://guides.emberjs.com/v2.8.0/getting-started/core-concepts/)
+-  There are a few core concepts you should understand how [Ember application works](https://guides.emberjs.com/v2.15.0/getting-started/core-concepts/)
