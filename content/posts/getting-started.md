@@ -2,9 +2,7 @@
     title = "Getting Started"
     date = 2017-09-23T17:56:59+05:30
     draft = false
-    Description = "Thank you for choosing guessme"
-    Tags = ["Ember"]
-    Categories = ["Ember"]
+    Description = "Getting Started"
 +++
 
 - HTML, CSS, JavaScript - the building blocks of web pages. You can find documentation of each of these technologies at the

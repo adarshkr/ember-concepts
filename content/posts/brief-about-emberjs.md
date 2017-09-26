@@ -26,7 +26,7 @@ Some of these features that you'll learn about in the guides are:
 <br>
 ### Ember-Cli
 
-Ember CLI is the Ember.js command line utility that provides a fast Broccoli-powered asset pipeline, a strong conventional project structure, and a powerful addon system for extension.
+Ember CLI is the Ember.js command line utility that provides a fast Broccoli-powered asset pipeline, a strong conventional project structure, and a powerful addon system for extension. It's super fast and rebuilds and reloads your app whenever any of your development files changes.
 
 <code> Ember CLI’s </code> asset compilation system has support for:
 

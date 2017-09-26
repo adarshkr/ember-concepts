@@ -2,7 +2,7 @@
     title = "Configuring Your App"
     date = 2017-09-26T01:50:39+05:30
     draft = false
-    Description = "Thank you for choosing guessme"
+    Description = "Ember App Configuration"
     Tags = ["Configuring", "Ember"]
     Categories = ["Ember"]
 +++
@@ -73,3 +73,28 @@ module.exports = function(environment) {
    }
 
    ```
+
+### Compiling Assets
+Ember CLI uses the Broccoli assets pipeline. 
+
+The assets manifest is located in the <code>ember-cli-build.js</code> file in your project root (not the default ember-cli-build.js). It is responsible for recompiling the assests when a project file changes.
+
+Example: 
+```
+// ember-cli-build.js
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+  var app = new EmberApp(defaults, {
+    minifyJS: {
+      enabled: false
+    },
+    minifyCSS: {
+      enabled: false
+    }
+  });
+
+  //...
+  return app.toTree();
+};
+```
