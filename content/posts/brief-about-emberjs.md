@@ -4,7 +4,7 @@
     draft = false
     Description = "Brief About Ember.js"
     Tags = ["ember"]
-    Categories = ["ember"]
+    Categories = ["ember","ember-cli"]
 +++
 
 Ember is a JavaScript front-end framework designed to help you build websites with rich and complex user interactions. It does so by providing developers both with many features that are essential to manage complexity in modern web applications, as well as an integrated development toolkit that enables rapid iteration.
