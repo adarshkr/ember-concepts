@@ -40,11 +40,11 @@ const Pizza = Ember.Object.extend({
   category: "Food"
 });
 
-const NonVegSupreme = Pizza.extend({
+const NonVeg = Pizza.extend({
   type: "Non Veg",
 })
 
-const VeggieParadise = Pizza.extend({
+const Veg = Pizza.extend({
   type: "Veg"
 })
 ```
@@ -58,15 +58,15 @@ const Pizza = Ember.Object.extend({
   toppings: ["Babycorn"] // CAREFUL !!!!!
 });
 
-const VeggieParadise = Pizza.create();
-VeggieParadise.get("toppings").push("Jalapeno");
+const Veg = Pizza.create();
+Veg.get("toppings").push("Jalapeno");
 
-const NonVegSupreme = Pizza.create();
-NonVegSupreme.get("toppings").push("Chicken Tikka");
+const NonVeg = Pizza.create();
+NonVeg.get("toppings").push("Chicken Tikka");
 
-// VeggieParadise and NonVegSupreme are all mixed up?!?!?!?!
-console.log( VeggieParadise.get("toppings") );  // ["Babycorn", "Jalapeno", "Chicken Tikka"]
-console.log( NonVegSupreme.get("toppings") ); // ["Babycorn", "Jalapeno", "Chicken Tikka"]
+// Veg and NonVeg are all mixed up?!?!?!?!
+console.log( Veg.get("toppings") );  // ["Babycorn", "Jalapeno", "Chicken Tikka"]
+console.log( NonVeg.get("toppings") ); // ["Babycorn", "Jalapeno", "Chicken Tikka"]
 ```
 
 Why did this toppings mutation happen? The problem started when we added an array to our prototype when defining the Pizza class. This array was then shared with each object instantiated from Pizza. Pizza lovers may not like <code>this</code>.
@@ -102,3 +102,38 @@ Of course, there's nothing wrong with keeping objects or arrays directly in your
 ### Reopening Objects
 
 You don't need to define a class all at once. You can reopen a class and define new properties using the <code>reopen()</code> method.
+
+```
+const Pizza = Ember.Object.extend({
+  category: "Food"
+});
+
+const NonVeg = Pizza.extend({
+  type: "Non Veg",
+})
+
+NonVeg.reopen({
+  size: "Large"
+})
+
+const NonVegSupreme = new NonVeg()
+
+console.log(NonVegSupreme.get('size')) // Large
+```
+
+If you want to add properties directly to a class, use reopenClass():
+
+```
+const Pizza = Ember.Object.extend({
+  size: "Large"
+});
+
+Pizza.reopenClass({
+  updateSize: function(attributes) {
+    return Pizza.create(attributes);
+  }
+});
+
+const size = Pizza.updateSize({size: "Medium"});
+console.log(size) // {size:"Medium"}
+```
