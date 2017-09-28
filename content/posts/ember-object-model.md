@@ -21,17 +21,15 @@ You can instantiate a basic object like this:
 const Pizza = Ember.Object.create({
   category: "Food"
 });
-
 ```
 You can get a property from the object by calling .get on it and passing the string name of the property:
 
 ```
 const Pizza = Ember.Object.create({ category: 'Food' })
 Pizza.get('category') is 'Food'
-
 ```
 
-#### Defining Objects
+#### Defining Objects and Instances
 
 To define a new Ember class, call the <code>extend()</code> method on Ember.Object:
 
@@ -69,12 +67,11 @@ NonVegSupreme.get("toppings").push("Chicken Tikka");
 // VeggieParadise and NonVegSupreme are all mixed up?!?!?!?!
 console.log( VeggieParadise.get("toppings") );  // ["Babycorn", "Jalapeno", "Chicken Tikka"]
 console.log( NonVegSupreme.get("toppings") ); // ["Babycorn", "Jalapeno", "Chicken Tikka"]
-
 ```
 
 Why did this toppings mutation happen? The problem started when we added an array to our prototype when defining the Pizza class. This array was then shared with each object instantiated from Pizza. Pizza lovers may not like <code>this</code>.
 
-Now you might be thinking how to keep pizza lovers happy without messing up with toppings ? 
+### Now you might be thinking how to keep pizza lovers happy without messing up with toppings ? 
 
 
 ```
@@ -100,3 +97,8 @@ console.log( NonVegSupreme.get("toppings") ); // ["Black Olive", "Chicken Tikka"
 When declaring objects or arrays in your classes, you'll typically want to initialize them along with each instance in the <code>init()</code> function. In this way, each of your objects will receive its own unique instances of objects and arrays. Also remember to call <code>this._super()</code> from within <code>init()</code> so that <code>init() </code> will be called all the way up the prototype chain.
 
 Of course, there's nothing wrong with keeping objects or arrays directly in your prototypes if they are meant to remain constant across instances. In fact, one common pattern is to keep a default setting in the prototype that's then duplicated for each instance in <code>init()</code>. These kinds of patterns are easy to implement once you realize how objects are created and initialized.
+
+
+### Reopening Objects
+
+You don't need to define a class all at once. You can reopen a class and define new properties using the <code>reopen()</code> method.
