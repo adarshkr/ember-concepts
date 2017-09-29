@@ -79,6 +79,4 @@ let obj = Ember.Object.extend({
 });
 ```
 
-Computed properties are super handy for taking one or more normal properties and transforming or manipulating their data to create a new value.
-
 <!--### Computed property macros-->
