@@ -94,6 +94,9 @@ console.log( VeggieParadise.get("toppings") );  // ["Black Olive", "Jalapeno"]
 console.log( NonVegSupreme.get("toppings") ); // ["Black Olive", "Chicken Tikka"]
 ```
 
+<code>[Ember Twiddle Link](https://ember-twiddle.com/c4016dce4607dfc1758456ff17983571?openFiles=controllers.application.js%2C)</code>
+
+<br>
 When declaring objects or arrays in your classes, you'll typically want to initialize them along with each instance in the <code>init()</code> function. In this way, each of your objects will receive its own unique instances of objects and arrays. Also remember to call <code>this._super()</code> from within <code>init()</code> so that <code>init()</code> will be called all the way up the prototype chain.
 
 Of course, there's nothing wrong with keeping objects or arrays directly in your prototypes if they are meant to remain constant across instances. In fact, one common pattern is to keep a default setting in the prototype that's then duplicated for each instance in <code>init()</code>. These kinds of patterns are easy to implement once you realize how objects are created and initialized.

@@ -49,7 +49,7 @@ detials: Ember.computed({type,price,name}, function() {
 })
 ...
 ```
-<code>[Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910?openFiles=controllers.application.js%2C)</code>
+<code>[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910?openFiles=controllers.application.js%2C)</code>
 
 <br>
 This is especially useful when you depend on properties of an object, since it allows you to replace:
