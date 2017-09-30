@@ -49,7 +49,8 @@ detials: Ember.computed({type,price,name}, function() {
 })
 ...
 ```
-<code>[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910?openFiles=controllers.application.js%2C)</code>
+<code>[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910)</code>
+
 
 <br>
 This is especially useful when you depend on properties of an object, since it allows you to replace:
@@ -57,7 +58,7 @@ This is especially useful when you depend on properties of an object, since it a
 ```
 import Ember from 'ember':
 
-let obj = Ember.Object.extend({
+let obj = Ember.Object.extehnd({
   baz: {foo: 'BLAMMO', bar: 'BLAZORZ'},
 
   something: Ember.computed('baz.foo', 'baz.bar', function() {

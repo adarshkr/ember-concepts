@@ -94,7 +94,7 @@ console.log( VeggieParadise.get("toppings") );  // ["Black Olive", "Jalapeno"]
 console.log( NonVegSupreme.get("toppings") ); // ["Black Olive", "Chicken Tikka"]
 ```
 
-<code>[Ember Twiddle Link](https://ember-twiddle.com/c4016dce4607dfc1758456ff17983571?openFiles=controllers.application.js%2C)</code>
+<code>[Ember Twiddle Link](https://ember-twiddle.com/c4016dce4607dfc1758456ff17983571)</code>
 
 <br>
 When declaring objects or arrays in your classes, you'll typically want to initialize them along with each instance in the <code>init()</code> function. In this way, each of your objects will receive its own unique instances of objects and arrays. Also remember to call <code>this._super()</code> from within <code>init()</code> so that <code>init()</code> will be called all the way up the prototype chain.
