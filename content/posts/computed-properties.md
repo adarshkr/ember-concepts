@@ -15,7 +15,7 @@ When the value of a dependent key changes, the CP is marked as stale. The next t
 
 ### Computed properties in action
 
-```
+```javascript
 import Ember from 'ember':
 
 const Pizza = Ember.Object.extend({
@@ -40,7 +40,8 @@ In the above example, detials is dependent on type, price and name, so it watche
 
 #### Short-hand syntax
 We can also use a short-hand syntax called brace expansion to declare the dependents. You surround the dependent properties with braces `({})`, and separate with commas, like so:
-```
+
+```javascript
 import Ember from 'ember':
 
 ...
@@ -49,13 +50,14 @@ detials: Ember.computed({type,price,name}, function() {
 })
 ...
 ```
+
 `[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910)`
 
 
 <br>
 This is especially useful when you depend on properties of an object, since it allows you to replace:
 
-```
+```javascript
 import Ember from 'ember':
 
 let obj = Ember.Object.extehnd({
@@ -69,7 +71,7 @@ let obj = Ember.Object.extehnd({
 
 With:
 
-```
+```javascript
 import Ember from 'ember':
 
 let obj = Ember.Object.extend({

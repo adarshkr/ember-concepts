@@ -21,7 +21,7 @@ You can access these environment variables in your application code by importing
 
 For example:
 
-```
+```javascript
 import ENV from 'your-application-name/config/environment';
 
 if (ENV.environment === 'development') {
@@ -36,7 +36,7 @@ In addition to configuring your app itself, you can also configure Ember CLI. Th
 
 For example, a common desire is to change the port that Ember CLI serves the app from. It's possible to pass the port number from the command line with `ember server --port 8080`. To make this configuration permanent, edit your `.ember-cli` file like so:
 
-```
+```javascript
 {
   "port": 8080
 }
@@ -46,7 +46,7 @@ For a full list of command line options, run `ember help`.
 
 #### We can have different configuration based on build environment
 
-```
+```javascript
 ### environment.js
 
 module.exports = function(environment) {
@@ -72,7 +72,7 @@ module.exports = function(environment) {
       }            
    }
 
-   ```
+```
 
 ### Compiling Assets
 Ember CLI uses the Broccoli assets pipeline. 
@@ -80,7 +80,8 @@ Ember CLI uses the Broccoli assets pipeline.
 The assets manifest is located in the `ember-cli-build.js` file in your project root (not the default ember-cli-build.js). It is responsible for recompiling the assests when a project file changes.
 
 Example: 
-```
+
+```javascript
 // ember-cli-build.js
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 

@@ -17,14 +17,14 @@ Ember also extends the JavaScript `Array` prototype with its Ember.Enumerable in
 ### Creating Objects
 You can instantiate a basic object like this:
 
-```
+```javascript
 const Pizza = Ember.Object.create({
   category: "Food"
 });
 ```
 You can get a property from the object by calling .get on it and passing the string name of the property:
 
-```
+```javascript
 const Pizza = Ember.Object.create({ category: 'Food' })
 Pizza.get('category') is 'Food'
 ```
@@ -35,7 +35,7 @@ To define a new Ember class, call the `extend()` method on Ember.Object:
 
 Feeling hungry ? Why dont we have some pizza ?
 
-```
+```javascript
 const Pizza = Ember.Object.extend({
   category: "Food"
 });
@@ -53,7 +53,7 @@ const Veg = Pizza.extend({
 
 One of the most common mistakes for beginners to Ember is to think they're passing properties to an instance instead of a prototype. For example:
 
-```
+```javascript
 const Pizza = Ember.Object.extend({
   toppings: ["Babycorn"] // CAREFUL !!!!!
 });
@@ -74,7 +74,7 @@ Why did this toppings mutation happen? The problem started when we added an arra
 ### Now you might be thinking how to keep pizza lovers happy without messing up with toppings ? 
 
 
-```
+```javascript
 const Pizza = Ember.Object.extend({
   toppings: null,
   init: function() {
@@ -106,7 +106,7 @@ Of course, there's nothing wrong with keeping objects or arrays directly in your
 
 You don't need to define a class all at once. You can reopen a class and define new properties using the `reopen()` method.
 
-```
+```javascript
 const Pizza = Ember.Object.extend({
   category: "Food"
 });
@@ -126,7 +126,7 @@ console.log(NonVegSupreme.get('size')) // Large
 
 If you want to add properties directly to a class, use reopenClass():
 
-```
+```javascript
 const Pizza = Ember.Object.extend({
   size: "Large"
 });
