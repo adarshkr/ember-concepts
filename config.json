@@ -1,19 +1,19 @@
 {
-  "baseURL" : "http://ember-concepts.herokuapp.com/",
-  "languageCode" : "en-us",
+  "baseURL": "http://ember-concepts.herokuapp.com/",
+  "languageCode": "en-us",
   "defaultContentLanguage": "en-us",
-  "title" : "Ember Concepts",
-  "theme" : "guessme",
-  "archetypeDir" : "themes/guessme/archetypes",
-  "paginate" :  10,
-  "footnotereturnlinkcontents" : "↩",
-  "MetaDataFormat" : "toml",
+  "title": "Ember Concepts",
+  "theme": "guessme",
+  "archetypeDir": "themes/guessme/archetypes",
+  "paginate": 10,
+  "footnotereturnlinkcontents": "↩",
+  "MetaDataFormat": "toml",
   "rootlink": "/",
-  "params" : {
+  "params": {
     "locale": "en-us",
-    "logoPath": "images/Ember.js_Logo_and_Mascot.png"
+    "logoPath": "images/Ember.js_Logo_and_Mascot.png",
+    "showTags": true,
+    "showCategories": false
   },
-  "canonifyurls" : true
+  "canonifyurls": true
 }
-
-  
