@@ -7,11 +7,11 @@
     Categories = ["object model"]
 +++
 
-Ember implements its own object system. The base object is Ember.Object. All of the other objects in Ember extend <code>Ember.Object</code>.
+Ember implements its own object system. The base object is Ember.Object. All of the other objects in Ember extend `Ember.Object`.
 
-<code>Ember.Object</code> also provides a class system, supporting features like mixins and constructor methods. Some features in Ember's object model are not present in JavaScript classes or common patterns, but all are aligned as much as possible with the language and proposed additions.
+`Ember.Object` also provides a class system, supporting features like mixins and constructor methods. Some features in Ember's object model are not present in JavaScript classes or common patterns, but all are aligned as much as possible with the language and proposed additions.
 
-Ember also extends the JavaScript <code>Array</code> prototype with its Ember.Enumerable interface to provide change observation for arrays.
+Ember also extends the JavaScript `Array` prototype with its Ember.Enumerable interface to provide change observation for arrays.
 
 
 ### Creating Objects
@@ -31,7 +31,7 @@ Pizza.get('category') is 'Food'
 
 #### Defining Objects and Instances
 
-To define a new Ember class, call the <code>extend()</code> method on Ember.Object:
+To define a new Ember class, call the `extend()` method on Ember.Object:
 
 Feeling hungry ? Why dont we have some pizza ?
 
@@ -69,7 +69,7 @@ console.log( Veg.get("toppings") );  // ["Babycorn", "Jalapeno", "Chicken Tikka"
 console.log( NonVeg.get("toppings") ); // ["Babycorn", "Jalapeno", "Chicken Tikka"]
 ```
 
-Why did this toppings mutation happen? The problem started when we added an array to our prototype when defining the Pizza class. This array was then shared with each object instantiated from Pizza. Pizza lovers may not like <code>this</code>.
+Why did this toppings mutation happen? The problem started when we added an array to our prototype when defining the Pizza class. This array was then shared with each object instantiated from Pizza. Pizza lovers may not like `this`.
 
 ### Now you might be thinking how to keep pizza lovers happy without messing up with toppings ? 
 
@@ -94,17 +94,17 @@ console.log( VeggieParadise.get("toppings") );  // ["Black Olive", "Jalapeno"]
 console.log( NonVegSupreme.get("toppings") ); // ["Black Olive", "Chicken Tikka"]
 ```
 
-<code>[Ember Twiddle Link](https://ember-twiddle.com/c4016dce4607dfc1758456ff17983571)</code>
+`[Ember Twiddle Link](https://ember-twiddle.com/c4016dce4607dfc1758456ff17983571)`
 
 <br>
-When declaring objects or arrays in your classes, you'll typically want to initialize them along with each instance in the <code>init()</code> function. In this way, each of your objects will receive its own unique instances of objects and arrays. Also remember to call <code>this._super()</code> from within <code>init()</code> so that <code>init()</code> will be called all the way up the prototype chain.
+When declaring objects or arrays in your classes, you'll typically want to initialize them along with each instance in the `init()` function. In this way, each of your objects will receive its own unique instances of objects and arrays. Also remember to call `this._super()` from within `init()` so that `init()` will be called all the way up the prototype chain.
 
-Of course, there's nothing wrong with keeping objects or arrays directly in your prototypes if they are meant to remain constant across instances. In fact, one common pattern is to keep a default setting in the prototype that's then duplicated for each instance in <code>init()</code>. These kinds of patterns are easy to implement once you realize how objects are created and initialized.
+Of course, there's nothing wrong with keeping objects or arrays directly in your prototypes if they are meant to remain constant across instances. In fact, one common pattern is to keep a default setting in the prototype that's then duplicated for each instance in `init()`. These kinds of patterns are easy to implement once you realize how objects are created and initialized.
 
 
 ### Reopening Objects
 
-You don't need to define a class all at once. You can reopen a class and define new properties using the <code>reopen()</code> method.
+You don't need to define a class all at once. You can reopen a class and define new properties using the `reopen()` method.
 
 ```
 const Pizza = Ember.Object.extend({

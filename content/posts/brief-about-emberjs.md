@@ -9,26 +9,26 @@
 
 Ember is a JavaScript front-end framework designed to help you build websites with rich and complex user interactions. It does so by providing developers both with many features that are essential to manage complexity in modern web applications, as well as an integrated development toolkit that enables rapid iteration.
 
-This open source framework is based on <code>Model–view–viewmodel (MVVM)</code> pattern.
+This open source framework is based on `Model–view–viewmodel (MVVM)` pattern.
 
 Some of these features that you'll learn about in the guides are:
 
-  - <code>Ember CLI</code> - A robust development toolkit to create, develop, and build Ember applications. When you see an $ ember command instruction throughout the guides, that's Ember CLI!
+  - `Ember CLI` - A robust development toolkit to create, develop, and build Ember applications. When you see an $ ember command instruction throughout the guides, that's Ember CLI!
 
-  - <code>Routing</code> - The central part of an Ember application. Enables developers to drive the  application state from the URL.
+  - `Routing` - The central part of an Ember application. Enables developers to drive the  application state from the URL.
 
-  - <code>Templating engine</code> - Use Handlebars syntax to write your application's templates.
+  - `Templating engine` - Use Handlebars syntax to write your application's templates.
 
-  - <code>Data layer</code> - Ember Data provides a consistent way to communicate with external APIs and manage application state.
+  - `Data layer` - Ember Data provides a consistent way to communicate with external APIs and manage application state.
 
-  - <code>Ember Inspector</code> - A browser extension, or bookmarklet, to inspect your application live.
+  - `Ember Inspector` - A browser extension, or bookmarklet, to inspect your application live.
 
 <br>
 ### Ember-Cli
 
 Ember CLI is the Ember.js command line utility that provides a fast Broccoli-powered asset pipeline, a strong conventional project structure, and a powerful addon system for extension. It's super fast and rebuilds and reloads your app whenever any of your development files changes.
 
-<code> Ember CLI’s </code> asset compilation system has support for:
+` Ember CLI’s ` asset compilation system has support for:
 
 - Handlebars
 - HTMLBars
@@ -45,13 +45,13 @@ Ember CLI is the Ember.js command line utility that provides a fast Broccoli-pow
 
 #### Principal features of Ember CLI are:
 
-- <code>Project/Addon creation</code>: create new projects quickly without having to worry about project structure;
+- `Project/Addon creation`: create new projects quickly without having to worry about project structure;
 
-- <code>Build pipeline</code>: asset compilation, finger-printing and more out of the box;
+- `Build pipeline`: asset compilation, finger-printing and more out of the box;
 
-- <code>Generators</code>: use the built-in generators and get files that follow the latest practices, and matching tests;
+- `Generators`: use the built-in generators and get files that follow the latest practices, and matching tests;
 
-- <code>Ember Addons</code>: extend both your application and Ember CLI itself with community solutions.
+- `Ember Addons`: extend both your application and Ember CLI itself with community solutions.
 
 
 

@@ -9,7 +9,7 @@
 
 In a nutshell, computed properties let you declare functions as properties. You create one by defining a computed property as a function, which Ember will automatically call when you ask for the property. You can then use it the same way you would any normal, static property.
 
-To define a computed property (CP), we need to call <code>Ember.computed</code>. The first parameters passed to it are the dependent keys of the CP. The last parameter is the function that computed the value of the CP. The value of the CP changes if and only if the value of any of the dependent keys changes, and is cached between such changes.
+To define a computed property (CP), we need to call `Ember.computed`. The first parameters passed to it are the dependent keys of the CP. The last parameter is the function that computed the value of the CP. The value of the CP changes if and only if the value of any of the dependent keys changes, and is cached between such changes.
 
 When the value of a dependent key changes, the CP is marked as stale. The next time we access its value, the computing function is run and its returned value becomes the new value of the CP.
 
@@ -39,7 +39,7 @@ Ember.get(VegPizza, 'detials') // Name: Veggie Paradise, Type: Veg, Price:500
 In the above example, detials is dependent on type, price and name, so it watches those properties, and when either of their values change, its function is invoked, thereby returning the updated detials property for our beloved Veg Pizza.
 
 #### Short-hand syntax
-We can also use a short-hand syntax called brace expansion to declare the dependents. You surround the dependent properties with braces <code>({})</code>, and separate with commas, like so:
+We can also use a short-hand syntax called brace expansion to declare the dependents. You surround the dependent properties with braces `({})`, and separate with commas, like so:
 ```
 import Ember from 'ember':
 
@@ -49,7 +49,7 @@ detials: Ember.computed({type,price,name}, function() {
 })
 ...
 ```
-<code>[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910)</code>
+`[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910)`
 
 
 <br>
