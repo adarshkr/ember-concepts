@@ -51,7 +51,7 @@ detials: Ember.computed({type,price,name}, function() {
 ...
 ```
 
-`[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910)`
+<code>[Ember Twiddle Link](https://ember-twiddle.com/f457c11f89066ff939fc2683763bd910)</code>
 
 
 <br>
